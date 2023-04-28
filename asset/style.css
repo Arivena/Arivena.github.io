@@ -1,0 +1,277 @@
+
+:root{
+    --pinkm:rgb(255,153,153);
+    --pinkb:rgb(255,123,123);
+    --pinkt:rgb(255,102,102);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+header{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+nav{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+.navbar a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color: rgb(255, 0, 0);
+    transition: all 0.7s ease;
+    font-weight: 600;
+}
+nav .logo{
+    display: flex;
+}
+nav .logo p{
+    display: flex;
+    color: aliceblue;
+    align-items: center;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.kon {
+    color:rgb(255, 255, 255);
+    background: transparent;
+    border-radius: 5px;
+    padding: 8px;
+    border-style: solid;
+    border-color: aliceblue;
+}
+.navbar .kon:hover{
+    color:rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color:rgb(255, 86, 86);
+    padding: 8px;
+    border-style: solid;
+    border-color: rgb(255, 86, 86);
+    transition: 1s;
+    font-weight: 400;
+}
+.navlink ul{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 0;
+}
+.navlink ul li{
+    margin: 0 20px;
+}
+.navlink ul li.active a{
+    color: red;
+    font-weight: 700;
+    transition: all 0.5s ease;
+}
+.navbar .menu-hamburger {
+    display: none;
+    position: absolute;
+    top: 55px;
+    right: 25px;
+    width: 30px;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.bg-transparent {
+    transition: all ease-in-out 0.3s;
+}
+.navcol {
+    background-color: rgba(216, 112, 147, 0.558);
+    z-index: 1; 
+    position: fixed; 
+    padding-right: 50px; 
+    padding-left: 50px; 
+    box-shadow: 0px 1px 15px 0px rgba(241, 145, 177, 0.312);
+    transition: all ease-in-out 0.3s;
+}
+.btn{
+    color: #111;
+    background-color: #fff;
+    border-color: #fff;
+    border-radius: 1.5px;
+    min-width: 140px;
+    cursor: pointer;
+    box-shadow: -1.7px 1.9px 0px var(--pinkt);
+}
+.btn:hover{
+    box-shadow: 0 0 10px var(--pinkt) inset;
+    transition: all 0.2s ease;
+    color: var(--pinkt);
+}
+
+.dashb {
+    padding-top: 200px;
+    background-image: url(./head.jpg);
+}
+#Feature {
+    padding: 100px 0;
+}
+.headf{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: var(--pinkm);
+    font-weight: bold;
+}
+.dsk {
+    font-size: small;
+    color: #111;
+    font-weight: normal;
+}
+
+
+.features{
+    width: 100%;
+    height: 180px;
+    border-radius: 6px;
+    padding: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.features img{
+    height: 60px; 
+    width: 60px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.crx :hover{
+    background-color: white;
+    transition: all 1.7s ease;
+    box-shadow: -3px 5px 5px 3px var(--pinkb);
+}
+.manyf img{
+    height: 70px;
+    width: 70px;
+}
+.features h4{
+    font-size: small;
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+#Galeri {
+    height: 120vh;
+}
+
+#Galeri img{
+    height: 250px;
+    width: 250px;
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 900px){
+    .navbar {
+        padding: 0;
+    }
+    .navbar .menu-hamburger{
+        display: block;
+        top: 47px;
+    }
+    .navlink {
+        position: absolute;
+        background-color: rgb(0 0 0 / 39%);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0 ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1000%;
+        transition: all 0.5s ease;
+    }
+    .navlink.mobile-menu {
+        margin-top: 0;
+    }
+    .navlink ul {
+        margin-right: 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar P{
+        color: aqua;
+        text-shadow: 0px 0px 2px rgba(255, 96, 96, 0.777);
+    }
+    .navbar .navlink ul li{
+        margin: 25px;
+        font-size: 1.1em;
+    }
+    .logo{
+        position: absolute;
+        top: 25px;
+        left: 2px;
+    }
+    .logo1{
+        display: none;
+    }
+    
+    .dashb {
+        padding-top: 120px;
+    }
+    .dashb {
+        padding-top: 120px;
+    }
+    
+    .features{
+        width: 100%;
+        height: 10px;
+        border-radius: 6px;
+        padding: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    .features img{
+        height: 50px; 
+        width: 50px; 
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .features h4{
+        font-size: small;
+        margin-top: 10px;
+        font-weight: bolder;
+    }
+    
+    .manyf img{
+        height: 60px;
+        width: 60px;
+    }
+    
+    #Galeri img{
+        height: 250px;
+        width: 250px;
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    #Galeri {
+        height: 270vh;
+    }
+}    
